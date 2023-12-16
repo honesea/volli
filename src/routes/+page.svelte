@@ -1,5 +1,7 @@
 <script>
 	import Person from '$lib/Person.svelte';
+
+	export let form;
 </script>
 
 <main class="relative flex min-h-screen w-screen justify-center lg:items-center">
@@ -23,18 +25,36 @@
 				</p>
 				<p class="text-xl text-neutral-100">Sign up to know when you can start using Volli.</p>
 
-				<div class="relative w-full rounded-lg bg-primary-600">
-					<input
-						type="email"
-						placeholder="Email address"
-						class="w-full rounded-lg bg-transparent px-4 py-6 text-xl text-neutral-100 outline-none placeholder:text-neutral-100 focus:outline focus:outline-orange-500"
-					/>
-					<div class="absolute right-0 top-0 flex h-full items-center pr-3">
-						<button class=" rounded bg-orange-500 px-4 py-3 font-semibold text-primary-900">
-							Sign up
-						</button>
+				{#if form?.success}
+					<div class="h-20">
+						<p class="text-xl font-bold text-peach-500">Thanks for signing up!</p>
 					</div>
-				</div>
+				{:else}
+					<form method="POST" class="relative h-20 w-full rounded-lg bg-primary-600">
+						<input
+							name="email"
+							type="email"
+							placeholder="Email address"
+							required
+							class="h-full w-full rounded-lg bg-transparent py-6 pl-4 pr-[116px] text-xl text-neutral-100 outline-none placeholder:text-neutral-100 focus:outline focus:outline-orange-500"
+						/>
+						<div class="absolute right-0 top-0 flex h-full items-center pr-4">
+							<button class=" rounded bg-orange-500 px-4 py-3 font-semibold text-primary-900">
+								Sign up
+							</button>
+						</div>
+
+						{#if form?.invalid}
+							<div class="absolute -bottom-2 translate-y-full">
+								<p class="text-peach-500">Please enter a valid email</p>
+							</div>
+						{:else if form?.message}
+							<div class="absolute -bottom-2 translate-y-full">
+								<p class="text-peach-500">{form?.message}</p>
+							</div>
+						{/if}
+					</form>
+				{/if}
 			</div>
 		</div>
 

@@ -23,7 +23,7 @@
 				</p>
 				<p class="text-xl text-neutral-100">Sign up to know when you can start using Volli.</p>
 
-				<div class="relative w-full rounded bg-primary-600">
+				<div class="relative w-full rounded-lg bg-primary-600">
 					<input
 						type="email"
 						placeholder="Email address"
@@ -39,7 +39,7 @@
 		</div>
 
 		<div class="flex items-start justify-center px-8 lg:p-0">
-			<div class="relative max-w-md rounded bg-primary-600 p-6">
+			<div class="relative max-w-md rounded-lg bg-primary-600 p-6">
 				<div
 					class="absolute bottom-0 right-16 h-6 w-8 translate-y-full rounded-bl-[24px] rounded-br-[4px] bg-primary-600"
 				/>

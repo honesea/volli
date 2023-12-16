@@ -12,6 +12,10 @@
 		type="font/woff2"
 		crossorigin="anonymous"
 	/>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap"
+		rel="stylesheet"
+	/>
 </svelte:head>
 
 <slot />

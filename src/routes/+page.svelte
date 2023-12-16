@@ -17,13 +17,13 @@
 				</p>
 				<p class="text-xl text-neutral-100">Sign up to know when you can start using Volli.</p>
 
-				<div class="relative w-full rounded-xl bg-primary-600">
+				<div class="relative w-full rounded bg-primary-600">
 					<input
 						type="email"
 						placeholder="Email address"
-						class="w-full rounded-xl bg-transparent px-4 py-6 text-xl text-neutral-100 outline-none placeholder:text-neutral-100 focus:outline focus:outline-orange-500"
+						class="w-full rounded-lg bg-transparent px-4 py-6 text-xl text-neutral-100 outline-none placeholder:text-neutral-100 focus:outline focus:outline-orange-500"
 					/>
-					<div class="absolute right-0 top-0 flex h-full items-center pr-4">
+					<div class="absolute right-0 top-0 flex h-full items-center pr-3">
 						<button class=" rounded bg-orange-500 px-4 py-3 font-semibold text-primary-900">
 							Sign up
 						</button>
@@ -33,13 +33,13 @@
 		</div>
 
 		<div class="px-8 lg:p-0">
-			<div class="rounded-xl bg-primary-500 p-6">
+			<div class="rounded bg-primary-500 p-6">
 				<p class="text-xl text-neutral-100">
 					“Great for creating draws and keeping track of player details and payment info.”
 				</p>
 			</div>
 
-			<div class="bg-blue-200 h-16 w-16 rounded-xl"></div>
+			<div class="bg-blue-200 h-16 w-16 rounded"></div>
 		</div>
 	</div>
 </main>
